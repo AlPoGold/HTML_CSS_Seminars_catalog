@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lato";
-    src: url("/fonts/Lato-Regular.ttf") format("truetype");
+    src: url("/fonts/Lato-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 900;
 }
@@ -11,9 +11,6 @@
     padding:0;
 }
 
-/* img {
-	max-width: 100%;
-} */
 
 .header{
     background: #222222;
@@ -89,14 +86,7 @@
 
 }
 
-.background_image1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/catalog_man.png);
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat;
-  }
+
 
 .overlay{
     position: absolute;
@@ -140,27 +130,107 @@
 .content_products_h3{
     display:flex;
     justify-content: center;
-}
+    margin-bottom: 6px;
+
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
 
 .content_products_p{
     display:flex;
     justify-content: center;
+    margin-bottom: 19px;
+
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .content_products_items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+.selected{
+    background-color: #F7E4E2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
 }
 
-.btn_browse_all_products {
-    color: #F26376;
+.selected img{
+    align-self:center;
+
+}
+
+.notselected{
+    background-color: #F8F8F8;
+}
+.item_main_description {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color:#F8F8F8;;
+}
+
+.products_item_name{
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.products_item_description{
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    
+    margin-bottom: 16px;
+
+}
+
+.products_item_price{
+    color: #F16D7F;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
+}
+.btn_BAP{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
+.btn_browse_all_products {
+
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #FFF;
     text-align: center;
     text-decoration: none;
     width: 212px;
