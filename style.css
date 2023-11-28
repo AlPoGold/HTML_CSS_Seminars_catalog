@@ -11,16 +11,34 @@
     padding:0;
 }
 
+/* img {
+	max-width: 100%;
+	width: auto;
+	display: block;
+} */
 
 .header{
     background: #222222;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 231px;
     padding-right: 240px;
 }
 .header_search_img{
     margin-right: 41px;
+}
+
+.header_user__icons{
+    display: flex;
+    align-items: center;
+    
+}
+.icon_menu{
+    margin-right: 25px;
+}
+.icon_user{
+    margin-right: 42px;
 }
 
 .content_logo{
@@ -72,7 +90,6 @@
     margin-top: 65px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (2, 1fr);
     row-gap: 30px;
     column-gap: 30px;
    
@@ -82,10 +99,14 @@
     position: relative;
     text-align: center;
     width: 100%;
+    filter:brightness(80%);
 
 
 }
 
+.catalog_accessories{
+    grid-column: 1 / -1;
+}
 
 
 .overlay{
@@ -239,4 +260,44 @@
     display: flex;
     align-items: center;
 
+}
+
+@media(min-width: 768px) and (max-width: 1024px)
+
+/* For tablet device*/
+
+{
+    .header{
+        padding-left: 32px;
+        padding-right: 41px;
+    }
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .content_logo img {
+		max-width: 380px;
+	}
+
+	.logo_sign_the_brand {
+		font-size: 44px;
+	}
+
+	.logo_sign_olf {
+		font-size: 24px;
+	}
+
+	.content_catalog {
+		gap: 20px;
+	}
+
+	.content_products_items {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	.btn_BAP{
+		margin: 32px auto;
+	}
 }
