@@ -100,7 +100,7 @@ img {
     position: relative;
     text-align: center;
     width: 100%;
-    filter:brightness(80%);
+    /* filter:brightness(80%); */
 
 
 }
@@ -323,6 +323,7 @@ img {
     /* For mobile devices     */
 
 {
+
     .header{
         padding-left: 16px;
         padding-right: 26px;
@@ -365,7 +366,7 @@ img {
     }
 
 	.logo_sign {
-		margin: 150px auto;
+		margin: 150px 56px;
 	}
 
 	.content_logo img {
@@ -379,20 +380,26 @@ img {
 	.logo_sign_olf {
 		font-size: 20px;
 	}
-
+    .logo_sign_olf_fashion{
+        font-size: 20px;
+    }
+    .pos_text_catalog img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .catalog_accessories .tablet{
         display:none;
     }
     .catalog_accessories .mobile{
         display:block;
-        max-width: fit-content;
     }
 	.content_products_items {
 		grid-template-columns: 1fr;
 		gap: 16px;
 	}
-
     
+
 	.btn_BAP {
 		margin: 32px auto;
 	}
