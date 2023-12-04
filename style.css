@@ -45,8 +45,9 @@ img {
     fill: #F1E4E6;
     background: #F1E4E6;
     display: flex;
-    justify-content: center;
+    gap:41px;
     flex-direction: row;
+    padding:0 calc(50% - 800px)
 }
 .logo_sign{
     display:flex;
@@ -54,6 +55,12 @@ img {
     justify-content: center;
     align-items: center;
     gap:16px;
+
+}
+.logo_sign_text{
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    
 }
 
 .logo_sign_the_brand{
@@ -81,8 +88,10 @@ img {
     line-height: normal;
 }
 .center{
-    margin-left: 230px;
-    margin-right: 230px;
+    /* margin-left: 230px;
+    margin-right: 230px; */
+    padding:0 calc(50% - 1140px/2);
+
 }
 
 .content_catalog{
@@ -184,6 +193,10 @@ img {
 
 
 }
+.item{
+    display: flex;
+    flex-direction: column;
+}
 .selected{
     background-color: #F7E4E2;
     display:flex;
@@ -266,8 +279,9 @@ img {
     background: #FFF;
     text-align: center;
     text-decoration: none;
-    width: 212px;
-    height: 48px;
+    /* width: 212px;
+    height: 48px; */
+    padding: 15px 39px;
     border-color: #FF6A6A;
     display: flex;
     align-items: center;
@@ -284,12 +298,12 @@ img {
         padding-right: 41px;
     }
 
-    .center {
+    /* .center {
         padding-left: 16px;
         padding-right: 16px;
         margin-left: 0px;
         margin-right: 0px;
-    }
+    } */
 
     .content_logo img {
 		max-width: 380px;
@@ -316,9 +330,27 @@ img {
 		margin: 32px auto;
 	}
 }
+@media (max-width: 1160px){
+    .center {
+        padding:0 calc(50% - 1024px/2);
+    }
+    }
+@media (max-width:1024px){
+    .center{
+        padding:0 calc(50% - 734px/2);
+    }
+    }
+@media (max-width:768px){
+    .center{
+        padding:0 calc(50% - 360px/2);
+    }
+    }
+@media(max-width: 359px) {
+    .center {
+        padding-left: calc(50% - 320px);
+    }
 
-
-
+    }
 @media(min-width: 320px) and (max-width: 767px)
     /* For mobile devices     */
 
