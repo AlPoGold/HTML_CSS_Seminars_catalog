@@ -27,8 +27,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 231px;
-    padding-right: 240px;
+
 }
 .header_search_img{
     margin-right: 41px;
@@ -39,11 +38,12 @@ img {
     align-items: center;
     
 }
-.header_search svg:hover {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+.header_user__icons svg:hover path{
+    fill:#F16D7F
 }
-.header_user__icons svg:hover {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+.header_search svg:hover path{
+    fill:#F16D7F
 }
 
 .icon_menu{
