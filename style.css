@@ -27,6 +27,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 18px ;
+    padding-bottom: 19px;
 
 }
 .header_search_img{
@@ -72,6 +74,7 @@ img {
 .logo_sign_text{
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
+    
     
 }
 
@@ -325,9 +328,8 @@ img {
     transition-duration: 0.3s;
 }
 .btn_browse_all_products {
-
-    color: #F26376;
     font-family: Lato;
+    color: #F26376;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -338,7 +340,7 @@ img {
     /* width: 212px;
     height: 48px; */
     padding: 15px 39px;
-    border-color: #FF6A6A;
+    border: 2px solid #FF6A6A;
     display: flex;
     align-items: center;
 
